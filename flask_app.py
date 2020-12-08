@@ -11,10 +11,10 @@ app = Flask(__name__)
 app.config["DEBUG"] = True
 
 SQLALCHEMY_DATABASE_URI = "mysql+mysqlconnector://{username}:{password}@{hostname}/{databasename}".format(
-    username="filomathes",
-    password="mercedes1969",
-    hostname="filomathes.mysql.pythonanywhere-services.com",
-    databasename="filomathes$comments",
+    username="yourusername",
+    password="yourpassword to the database",
+    hostname="the full path where your database lives",
+    databasename="yourdatabasename",
 )
 app.config["SQLALCHEMY_DATABASE_URI"] = SQLALCHEMY_DATABASE_URI
 app.config["SQLALCHEMY_POOL_RECYCLE"] = 299
